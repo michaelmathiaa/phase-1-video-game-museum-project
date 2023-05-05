@@ -1,0 +1,20 @@
+body {
+    background-color: #F8F8FF;
+}
+
+#fs-game {
+    text-align: center;
+}
+
+.game-images {
+    width: 230px;
+    height: 200px;
+    border: solid;
+    border-radius: 5px;
+}
+
+#detail-image {
+    width: 300px;
+    height: 300px;
+}
+

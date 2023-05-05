@@ -1,0 +1,40 @@
+{
+    "games": [
+        {
+            "title": "Demon's Souls",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/demons-souls.jpg"
+        },
+        {
+            "title": "Dark Souls 1",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/dark-souls1.jpg"
+        },
+        {
+            "title": "Dark Souls 2",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/dark-souls2.jpg"
+        },
+        {
+            "title": "Bloodborne",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/bloodborne.jpg"
+        },
+        {
+            "title": "Dark Souls 3",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/dark-souls3.jpg"
+        },
+        {
+            "title": "Elden Ring",
+            "rating": "M",
+            "release": 2018,
+            "image": "images/elden-ring.jpg"
+        }
+    ]
+}
