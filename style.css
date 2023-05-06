@@ -1,17 +1,23 @@
 body {
-    background-color: #F8F8FF;
-    text-align: center;
+    background-color: black;
+    color: gold;
 }
 
 .game-images {
     width: 230px;
     height: 200px;
-    border: solid;
-    border-radius: 5px;
+    border: hidden;
+    border-radius: 5%;
+    padding: 3px;
 }
 
 #detail-image {
-    width: 300px;
+    width: 345px;
     height: 300px;
+    border: hidden;
+    border-radius: 5%;
 }
 
+#content-section {
+    display: inline-block;
+}
