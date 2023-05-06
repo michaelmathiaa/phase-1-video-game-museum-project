@@ -6,18 +6,32 @@ body {
 .game-images {
     width: 230px;
     height: 200px;
-    border: hidden;
-    border-radius: 5%;
     padding: 3px;
 }
 
 #detail-image {
     width: 345px;
     height: 300px;
-    border: hidden;
-    border-radius: 5%;
 }
 
 #content-section {
     display: inline-block;
+}
+
+#image-setting {
+    height: 300px;
+    width: 600px
+}
+
+img {
+    border: hidden;
+    border-radius: 5%;
+}
+
+p {
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
 }

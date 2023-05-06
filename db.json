@@ -5,42 +5,48 @@
             "rating": "M",
             "release": "February 5, 2009",
             "platforms": "PlayStation 3",
-            "image": "images/demons-souls.jpg"
+            "image": "images/demons-souls.jpg",
+            "setting":"images/demon-souls-setting.jpg"
         },
         {
             "title": "Dark Souls 1",
             "rating": "M",
             "release": "September 22, 2011",
             "platforms": "PlayStation 3",
-            "image": "images/dark-souls1.jpg"
+            "image": "images/dark-souls1.jpg",
+            "setting": "images/dark-souls1-setting.jpg"
         },
         {
             "title": "Dark Souls 2",
             "rating": "T",
             "release": "March 13, 2014",
             "platforms": "PlayStation 3, Xbox 360, Windows",
-            "image": "images/dark-souls2.jpg"
+            "image": "images/dark-souls2.jpg",
+            "setting": "images/dark-souls2-setting.jpg"
         },
         {
             "title": "Bloodborne",
             "rating": "M",
             "release": "March 26, 2015",
             "platforms": "PlayStation 4",
-            "image": "images/bloodborne.jpg"
+            "image": "images/bloodborne.jpg",
+            "setting": "images/bloodborne-setting.jpg"
         },
         {
             "title": "Dark Souls 3",
             "rating": "M",
             "release": "March 24, 2016",
             "platforms": "PlayStation 4, Xbox One, Windows",
-            "image": "images/dark-souls3.jpg"
+            "image": "images/dark-souls3.jpg",
+            "setting": "images/dark-souls3-setting.jpg"
         },
         {
             "title": "Elden Ring",
             "rating": "M",
             "release": "February 25, 2022",
             "platforms": "PlayStation 4, PlayStation 5, Xbox One, Xbox series X | S, Windows",
-            "image": "images/elden-ring.jpg"
+            "image": "images/elden-ring.jpg",
+            "setting": "images/elden-ring-setting.jpg"
         }
     ]
 }

@@ -5,6 +5,7 @@ const gameRating = document.getElementById('game-rating');
 const gameRelease = document.getElementById('game-release');
 const gameReview = document.getElementById('game-review');
 const gamePlatforms = document.getElementById('game-platforms');
+const gameSetting = document.querySelector('#image-setting');
 
 fetch('http://localhost:3000/games')
 .then(response => response.json())
