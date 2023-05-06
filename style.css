@@ -23,9 +23,13 @@ body {
     width: 600px
 }
 
+#review {
+    text-align: center;
+}
+
 img {
     border: hidden;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 p {
