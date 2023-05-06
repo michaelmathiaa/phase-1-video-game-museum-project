@@ -15,6 +15,7 @@ fetch('http://localhost:3000/games')
     gameRating.textContent = data[0].rating;
     gameRelease.textContent = data[0].release;
     gamePlatforms.textContent = data[0].platforms;
+    gameSetting.src = data[0].setting;
 
     data.forEach(game => {
         const img = document.createElement('img');
@@ -27,6 +28,7 @@ fetch('http://localhost:3000/games')
             gameRating.textContent = game.rating;
             gameRelease.textContent = game.release;
             gamePlatforms.textContent = game.platforms;
+            gameSetting.src = game.setting;
         })
         fromSoftwareGames.appendChild(img);
     });
