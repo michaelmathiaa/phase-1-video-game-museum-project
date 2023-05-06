@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: gold;
+    color: firebrick;
 }
 
 .game-images {
@@ -23,8 +23,13 @@ body {
     width: 600px
 }
 
-#review {
+#review, h1 {
     text-align: center;
+}
+
+#review-box {
+    border: solid;
+    border-color: firebrick;
 }
 
 img {
@@ -33,9 +38,5 @@ img {
 }
 
 p {
-    color: aliceblue;
-}
-
-h1 {
-    text-align: center;
+    color: navajowhite;
 }
