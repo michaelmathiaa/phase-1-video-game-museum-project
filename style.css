@@ -23,15 +23,6 @@ body {
     width: 600px
 }
 
-#review, h1 {
-    text-align: center;
-}
-
-#review-box {
-    border: solid;
-    border-color: firebrick;
-}
-
 img {
     border: hidden;
     border-radius: 2%;

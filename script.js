@@ -3,9 +3,9 @@ const gameImage = document.getElementById('detail-image');
 const gameTitle = document.getElementById('game-title');
 const gameRating = document.getElementById('game-rating');
 const gameRelease = document.getElementById('game-release');
-const gameReview = document.getElementById('game-review');
 const gamePlatforms = document.getElementById('game-platforms');
 const gameSetting = document.querySelector('#image-setting');
+const detailDiv = document.getElementById('detail-div');
 
 fetch('http://localhost:3000/games')
 .then(response => response.json())
@@ -17,12 +17,13 @@ fetch('http://localhost:3000/games')
     gamePlatforms.textContent = data[0].platforms;
     gameSetting.src = data[0].setting;
 
+
     data.forEach(game => {
         const img = document.createElement('img');
         img.setAttribute('class', 'game-images');
         img.src = game.image;
 
-        img.addEventListener('click', e => {
+        img.addEventListener('click', () => {
             gameImage.src = game.image;
             gameTitle.textContent = game.title;
             gameRating.textContent = game.rating;
@@ -31,5 +32,11 @@ fetch('http://localhost:3000/games')
             gameSetting.src = game.setting;
         })
         fromSoftwareGames.appendChild(img);
+    });
+    gameSetting.addEventListener('mouseover', (e) => {
+        console.log(e.target);
+        const description = document.createElement('p');
+        description.textContent = 'Is this working?';
+        detailDiv.appendChild(description);
     });
 })
