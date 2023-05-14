@@ -1,4 +1,4 @@
-const fromSoftwareGames = document.getElementById('fs-games');
+const games = document.getElementById('fs-games');
 const gameImage = document.getElementById('detail-image');
 const gameTitle = document.getElementById('game-title');
 const gameRating = document.getElementById('game-rating');
@@ -6,6 +6,7 @@ const gameRelease = document.getElementById('game-release');
 const gamePlatforms = document.getElementById('game-platforms');
 const gameSetting = document.querySelector('#image-setting');
 const detailDiv = document.getElementById('detail-div');
+const gameDescription = document.getElementById('description');
 
 fetch('http://localhost:3000/games')
 .then(response => response.json())
@@ -30,13 +31,22 @@ fetch('http://localhost:3000/games')
             gameRelease.textContent = game.release;
             gamePlatforms.textContent = game.platforms;
             gameSetting.src = game.setting;
+            gameDescription.textContent = game.description;
         })
-        fromSoftwareGames.appendChild(img);
-    });
-    gameSetting.addEventListener('mouseover', (e) => {
-        console.log(e.target);
-        const description = document.createElement('p');
-        description.textContent = 'Is this working?';
-        detailDiv.appendChild(description);
+        games.appendChild(img);
     });
 })
+
+gameSetting.addEventListener('mouseover', () => {
+    const description = document.createElement('p');
+    fetch('http://localhost:3000/games')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        data.forEach(game => {
+            console.log(game);
+        });
+    })
+    detailDiv.appendChild(description);
+});
+
