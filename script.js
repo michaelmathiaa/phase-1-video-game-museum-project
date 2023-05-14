@@ -17,6 +17,7 @@ fetch('http://localhost:3000/games')
     gameRelease.textContent = data[0].release;
     gamePlatforms.textContent = data[0].platforms;
     gameSetting.src = data[0].setting;
+    gameDescription.textContent = data[0].description;
 
 
     data.forEach(game => {
