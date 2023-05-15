@@ -46,3 +46,7 @@ gameSetting.addEventListener('mouseover', () => {
     body.style.backgroundColor = colorGenerator;
 });
 
+gameSetting.addEventListener('mouseleave', () => {
+    const body = document.querySelector('body');
+    body.style.backgroundColor = 'black';
+})
