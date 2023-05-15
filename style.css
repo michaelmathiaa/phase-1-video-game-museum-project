@@ -18,7 +18,7 @@ body {
     display: inline-block;
 }
 
-#image-setting {
+#setting-image {
     height: 300px;
     width: 600px
 }
@@ -34,4 +34,8 @@ p {
 
 h1, #description {
     text-align: center;
+}
+
+#description {
+    font-size: larger;
 }
