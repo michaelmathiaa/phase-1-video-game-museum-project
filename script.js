@@ -33,9 +33,7 @@ function gameDetails(game) {
     games.appendChild(img);
 }
 
-fetch('http://localhost:3000/games')
-.then(response => response.json())
-.then(data => {
+function demonsSoulsContent(data) {
     gameImage.src = data[0].image;
     gameTitle.textContent = data[0].title;
     gameRating.textContent = data[0].rating;
@@ -45,7 +43,11 @@ fetch('http://localhost:3000/games')
     gameDescription.textContent = data[0].description;
 
     data.forEach(game => gameDetails(game));
-})
+}
+
+fetch('http://localhost:3000/games')
+.then(response => response.json())
+.then(data => demonsSoulsContent(data))
 
 gameSetting.addEventListener('mouseenter', randomColor);
 
