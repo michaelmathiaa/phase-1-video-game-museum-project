@@ -6,6 +6,7 @@ const gameRelease = document.getElementById('game-release');
 const gamePlatforms = document.getElementById('game-platforms');
 const gameSetting = document.querySelector('#image-setting');
 const gameDescription = document.getElementById('description');
+const body = document.querySelector('body');
 
 fetch('http://localhost:3000/games')
 .then(response => response.json())
@@ -38,7 +39,6 @@ fetch('http://localhost:3000/games')
 })
 
 gameSetting.addEventListener('mouseenter', () => {
-    const body = document.querySelector('body');
     const randomRed = Math.floor(Math.random() * 85) + 1;
     const randomGreen = Math.floor(Math.random() * 85) + 1;
     const randomBlue = Math.floor(Math.random() * 85) + 1;
@@ -47,6 +47,5 @@ gameSetting.addEventListener('mouseenter', () => {
 });
 
 gameSetting.addEventListener('mouseleave', () => {
-    const body = document.querySelector('body');
     body.style.backgroundColor = 'black';
 })
