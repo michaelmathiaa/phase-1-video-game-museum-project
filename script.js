@@ -5,7 +5,6 @@ const gameRating = document.getElementById('game-rating');
 const gameRelease = document.getElementById('game-release');
 const gamePlatforms = document.getElementById('game-platforms');
 const gameSetting = document.querySelector('#image-setting');
-const detailDiv = document.getElementById('detail-div');
 const gameDescription = document.getElementById('description');
 
 fetch('http://localhost:3000/games')
@@ -39,15 +38,11 @@ fetch('http://localhost:3000/games')
 })
 
 gameSetting.addEventListener('mouseover', () => {
-    const description = document.createElement('p');
-    fetch('http://localhost:3000/games')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        data.forEach(game => {
-            console.log(game);
-        });
-    })
-    detailDiv.appendChild(description);
+    const body = document.querySelector('body');
+    const randomRed = Math.floor(Math.random() * 255) + 1;
+    const randomGreen = Math.floor(Math.random() * 255) + 1;
+    const randomBlue = Math.floor(Math.random() * 255) + 1;
+    const colorGenerator = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+    body.style.backgroundColor = colorGenerator;
 });
 
