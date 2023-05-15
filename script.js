@@ -37,7 +37,7 @@ fetch('http://localhost:3000/games')
     });
 })
 
-gameSetting.addEventListener('mouseover', () => {
+gameSetting.addEventListener('mouseenter', () => {
     const body = document.querySelector('body');
     const randomRed = Math.floor(Math.random() * 255) + 1;
     const randomGreen = Math.floor(Math.random() * 255) + 1;
